@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+/**
+font-family: 'Barlow', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+/**
+font-family: 'Fraunces', serif;
+**/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/** setting our font here, respecting the font size reference of our users **/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+/** header */
+
+header {
+  display: flex;
+  justify-content: space-between; 
+  height: 536px;
+  background-image: url(images/mobile/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 305px;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  left: 25px;
+  z-index: 1;
+  transition: all 1 ease-in-out;
+}
+
+header nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+header ul li {
+  padding-bottom: 25px;
+}
+/*
+header li {
+  margin: 43px auto;
+}
+*/
+
+
+header nav ul a {
+  text-decoration: none;
+  color: #808397;
+}
+
+header .logo {
+  margin: 32px;
+}
+
+nav::before {
+  content: "";
+    position: absolute;
+    border-top: 25px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 25px solid #fff;
+    top: -19px;
+    right: 0;
+}
+
+.active {
+  background-color: #fcd603;
+  border-radius: 20px;
+  padding: 10px 25px;
+}
+
+
+
+div.hamburger {
+  margin: 32px;
+}
+
+.hidden {
+  display: none;
+
+}
+
+.introductory {
+  width: 300px;
+  height: 262px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+}
+
+.introductory h2 {
+  font-family: 'Fraunces', serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 6px;
+  padding-bottom: 50px;
+}
+
+
+
+
+/*****************************************************************************/
+
+/** sectionOne */
+
+.image1 {
+  height: 313px;
+  width:100%;
+  background-image: url(images/mobile/image-transform.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.section-text1 {
+  height: 436px;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+
+.section-text1 h2{
+  margin-bottom: 35px;
+  font-size: 3rem;
+  font-family: 'Fraunces', serif;
+  color:hsl(212, 27%, 19%);
+  font-weight: 900;
+}
+
+.section-text1 p {
+  margin-bottom: 35px;
+  color:  hsl(213, 9%, 39%);
+  font-size: 1.7rem;
+  line-height: 1.6;
+  font-weight: 600;
+  
+}
+
+.section-text1 a {
+  font-family: 'Fraunces', serif;
+  margin-bottom: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  
+}
+
+.sectionOne a {
+  text-decoration: underline 9px hsl(51,85%,87%);
+  text-underline-offset: -5px;
+}
+
+
+
+/*
+.sectionOne .section-text1 a::before {
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 10px;
+  background:  hsl(51, 100%, 49%);
+  left: 117px;
+  top: 1201px;
+  bottom: 0;
+  border-radius: 25px;
+  z-index: -1;
+  opacity: 0.4;
+}
+*/
+/***************************************************************************/
+
+/**   sectionTwo   **/
+
+
+.image2 {
+  height: 313px;
+  width:100%;
+  background-image: url(images/mobile/image-stand-out.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.section-text2 {
+  height: 436px;
+  text-align: center;
+  padding: 60px 30px;
+ 
+}
+
+.section-text2 h2{
+  margin-bottom: 35px;
+  font-size: 3rem;
+  font-family: 'Fraunces', serif;
+  color:hsl(212, 27%, 19%);
+  font-weight: 900;
+}
+
+.section-text2 p {
+  margin-bottom: 35px;
+  color:  hsl(213, 9%, 39%);
+  font-size: 1.7rem;
+  line-height: 1.6;
+  font-weight: 600;
+  
+}
+
+.section-text2 a {
+  font-family: 'Fraunces', serif;
+  margin-bottom: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  
+}
+
+
+
+.sectionTwo a {
+  text-decoration: underline 9px #FDD7D4;
+  text-underline-offset: -5px;
+}
+
+
+
+
+
+
+/***********************************************************************/
+
+/** sectionThree **/
+
+.image3 { 
+  background-image: url(images/mobile/image-graphic-design.jpg);
+  height: 600px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.textImage3 {
+  position: relative;
+  top: 410px;
+  height: 192px;
+  text-align: center;
+  font-size: 1.5rem;
+  color:hsl(167, 40%, 24%);
+}
+
+.textImage3 h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 33px;
+}
+
+.textImage3 p {
+  margin: 10px 25px;
+  color:  #23303e;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+
+/******/
+
+
+.image4 { 
+  background-image: url(images/mobile/image-photography.jpg);
+  height: 600px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.textImage4 {
+  position: relative;
+  top: 410px;
+  height: 192px;
+  text-align: center;
+  font-size: 1.5rem;
+  color:  hsl(198, 62%, 26%);
+}
+
+.textImage4 h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 33px;
+}
+
+.textImage4 p {
+  margin: 10px 25px;
+  color:  #23303e;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+/******************************************************************/
+
+/**************************  testimonials *************/
+
+/** profileOne**/
+.testimonials {
+  height: 1252px;
+  text-align: center;
+}
+
+.testimonials h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  color:  hsl(210, 4%, 67%);
+  font-weight: 900;
+  margin-top: 62px;
+  letter-spacing: 4px;
+}
+
+.testimonials img {
+  max-width: 77px;
+  height: 71px;
+  border-radius: 50%;
+  margin-top: 60px;
+  
+}
+
+.profileOneText .profileOneMsg {
+  font-size: 1.7rem;
+  color:  hsl(213, 9%, 39%);
+  line-height: 3rem;
+  margin: 36px 38px;
+}
+
+.profileOneName {
+  font-family: 'Fraunces', serif;
+  color:  hsl(212, 27%, 19%);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.profileOnePosition {
+  margin-top: 16px;
+  font-size: 1.3rem;
+  color:  hsl(210, 4%, 67%);
+}
+
+/******************************************************************/
+
+/** profileTwo **/
+
+.profileTwoText .profileTwoMsg {
+  font-size: 1.7rem;
+  color:  hsl(213, 9%, 39%);
+  line-height: 3rem;
+  margin: 36px 38px;
+}
+
+.profileTwoName {
+  font-family: 'Fraunces', serif;
+  color:  hsl(212, 27%, 19%);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.profileTwoPosition {
+  margin-top: 16px;
+  font-size: 1.3rem;
+  color:  hsl(210, 4%, 67%);
+}
+
+/*******************************************************************/
+
+/** profileThree **/
+
+.profileThreeText .profileThreeMsg {
+  font-size: 1.7rem;
+  color:  hsl(213, 9%, 39%);
+  line-height: 3rem;
+  margin: 36px 38px;
+}
+
+.profileThreeName {
+  font-family: 'Fraunces', serif;
+  color:  hsl(212, 27%, 19%);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.profileThreePosition {
+  margin-top: 16px;
+  font-size: 1.3rem;
+  color:  hsl(210, 4%, 67%);
+}
+
+/*****************************************************************/
+
+/********************** setImages *******************/
+
+/** image1 **/
+
+.setImages {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.setImages .images {
+  width: 50%;
+  height: 185px;
+}
+
+.setImage1 {
+  background-image: url(images/mobile/image-gallery-milkbottles.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.setImage2 {
+  background-image: url(images/mobile/image-gallery-orange.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.setImage3 {
+  background-image: url(images/mobile/image-gallery-cone.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.setImage4 {
+  background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*********************************************************/
+
+
+/*** footer ***/
+
+
+footer {
+  background-color: #93D3C5;
+  height: 351px;
+}
+
+.footerLogo  {
+  padding-top: 60px;
+  padding-left: 65px;
+  margin-left:60px;
+}
+
+
+.footerLogo svg path{
+  fill: hsl(168, 34%, 41%);
+}
+
+
+.footerNav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  margin-top: 39px;
+}
+
+.footerNav a {
+  text-decoration: none;
+  color: #498D7E;
+}
+
+
+.social-icons {
+  margin-top: 85px;
+}
+
+.social-icons ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
