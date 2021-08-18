@@ -23,114 +23,52 @@ html {
 }
 
 body {
-    font-size: 1.8rem;
-    font-family: 'Barlow', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-family: 'Barlow', sans-serif;
 }
 
 
-/** header */
+/*********************** header **************************************/
 
 header {
-  display: flex;
-  justify-content: space-between; 
   height: 536px;
   background-image: url(images/mobile/image-header.jpg);
   background-position: center;
   background-size: cover;
-  
 }
 
-header nav {
+header .nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 320px;
-  height: 305px;
-  background-color: white;
-  position: absolute;
-  top: 80px;
-  left: 25px;
-  z-index: 1;
-  transition: all 1 ease-in-out;
-}
-
-header nav ul{
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
-
-header ul li {
-  padding-bottom: 25px;
-}
-/*
-header li {
-  margin: 43px auto;
-}
-*/
-
-
-header nav ul a {
-  text-decoration: none;
-  color: #808397;
-}
-
-header .logo {
-  margin: 32px;
-}
-
-nav::before {
-  content: "";
-    position: absolute;
-    border-top: 25px solid transparent;
-    border-left: 10px solid transparent;
-    border-right: 25px solid #fff;
-    top: -19px;
-    right: 0;
-}
-
-.active {
-  background-color: #fcd603;
-  border-radius: 20px;
-  padding: 10px 25px;
+  padding: 30px 22px;
+  justify-content: space-between;
 }
 
 
 
-div.hamburger {
-  margin: 32px;
-}
 
-.hidden {
+header .nav-menu-links {
   display: none;
-
 }
+
+/*********************************************************************/
+
+/**** introductory ************/
 
 .introductory {
-  width: 300px;
-  height: 262px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 150px;
-  left: 0px;
-  right: 0px;
-  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 33px;
 }
 
 .introductory h2 {
   font-family: 'Fraunces', serif;
-  color: white;
   text-transform: uppercase;
-  text-align: center;
   font-size: 4rem;
-  letter-spacing: 6px;
-  padding-bottom: 50px;
+  color: white;
+  letter-spacing: 6.25px;
+  margin-bottom: 50px;
 }
 
 
@@ -341,7 +279,7 @@ div.hamburger {
 
 /**************************  testimonials *************/
 
-/** profileOne**/
+
 .testimonials {
   height: 1252px;
   text-align: center;
@@ -363,6 +301,9 @@ div.hamburger {
   margin-top: 60px;
   
 }
+
+
+/** profileOne**/
 
 .profileOneText .profileOneMsg {
   font-size: 1.7rem;
@@ -487,16 +428,29 @@ footer {
 }
 
 .footerLogo  {
+  max-width: 188px;
+  padding-top: 60px;
+  margin: 0 auto;
+  /*
   padding-top: 60px;
   padding-left: 65px;
-  margin-left:60px;
+  margin-left:60px;*/
 }
 
+
+.footerLogo svg{
+  margin: 0 auto;
+  padding-left: 35px;
+}
 
 .footerLogo svg path{
   fill: hsl(168, 34%, 41%);
 }
 
+.footerNav {
+  max-width: 300px;
+  margin: 0 auto;
+}
 
 .footerNav ul {
   display: flex;
@@ -529,6 +483,236 @@ footer {
 
 
 
+/******************************************************************/ 
+
+/** media queries **/
+/***** 768 ***/ 
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 797px;
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  header .hamburger-menu {
+    display: none;
+  }
+
+  header .nav-menu-links {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  header .nav-menu-links ul{
+    display: flex;
+    list-style: none;
+    padding: 30px 25px;
+    
+  }
+
+  header ul li {
+    margin-left: 36px; 
+  }
+
+  a {
+    text-decoration: none;
+    color: white
+  }
+
+  #header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact {
+    background-color: white;
+    color: hsl(232, 10%, 55%);
+    padding: 12px 25px;
+    border-radius: 50px;
+  }
+
+  /**** introductory ****/
+
+  .introductory h2 {
+    font-size: 5rem;
+    margin-bottom: 95px;
+  }
+
+  .introductory {
+    position: relative;
+    top: 50px;
+  }
+
+
+  /******************** sectionOne ******************/
+
+  .sectionOne {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .image1 {
+    background-image: url(images/desktop//image-transform.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 50%;
+  }
+
+  .section-text1 {
+    width: 50%;
+    text-align: left;
+    height: 600px;
+  }
+
+  
+  .section-text1 h2 {
+    font-size: 3rem;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 25px;
+  }
+
+  .section-text1 p {
+    font-size: 1.7rem;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 25px;
+  }
+
+  .section-text1 a {
+    margin-left: 20px;
+  }
+
+  /*************** sectionTwo **********************/
+
+  .sectionTwo {
+    display: flex;
+  }
+
+  .image2 {
+    background-image: url(images/desktop//image-stand-out.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 50%;
+  }
+
+  .section-text2 {
+    width: 50%;
+    text-align: left;
+    height: 600px;
+  }
+
+  
+  .section-text2 h2 {
+    font-size: 3rem;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 25px;
+  }
+
+  .section-text2 p {
+    font-size: 1.7rem;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 25px;
+  }
+
+  .section-text2 a {
+    margin-left: 20px;
+  }
+
+
+  /************ sectionThree **********************/
+  .sectionThree {
+    display: flex;
+  }
+
+  .image3 {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 50%;
+  }
+
+  .image4 {
+    background-image: url(images/desktop/image-photography.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 50%;
+  }
+
+  /************* testimonials ************************/
+
+  .testimonials {
+    height: 500px;
+  }
+
+  .testimonials h3 {
+    margin-top: 80px;
+  }
+
+  .profiles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+  }
+
+
+
+  /*** setImages ****/
+
+  .setImages .images {
+    width: 25%;
+    height: 445px;
+  }
+
+  .setImage1 {
+    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .setImage2 {
+    background-image: url(images/desktop//image-gallery-orange.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .setImage3 {
+    background-image: url(images/desktop//image-gallery-cone.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .setImage4 {
+    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  
+
+ 
+
+
+
+  
+
+
+
+  
+
+
+
+
+ 
+}
 
 
 
